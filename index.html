@@ -57,10 +57,11 @@
         }
 
         .overlay {
-            position: absolute;
-            bottom: 100%;/*from top to bottom.*/
-            left: 0;
-            right: 0;
+            position: absolute;/*A child container that has position: absolute needs a parent container that has position: relative.*/
+            /*top:0;
+            bottom: 0;/*from top to bottom.*/
+            /*left: 0;
+            right: 0;*/
             background-image: linear-gradient(to top, rgba(209, 54, 100, 0.8)0%, rgb(254, 225, 64, 0.8)100%);
             /*gradient color uses background-image only.*/
             overflow: hidden;
@@ -74,7 +75,7 @@
         /*animation.Be a first status before hover.*/
 
         .box:hover .overlay {
-            bottom: 0;
+            top: 0;
             height: 100%;
             transform: scale(1) rotateY(360deg);/*rotate 1 turn and enlarge 1x.*/
         }/*the .overlay is hidden, thus the .box needs to be added :hover that makes the .overlay animation work.*/
