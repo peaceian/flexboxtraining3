@@ -1,6 +1,6 @@
 # flexboxtraining3
 This project is added animation by following the flexboxtraining2.<br>
-Building a flex container, which calls .row, contains 4 columns that have .box including images and .overlay.<br>
+Building a flex container, which calls .row, contains 4 .columns that have .box including images and .overlay.<br>
 <pre>&lt;div class="row"&gt;
         &lt;div class="column"&gt;
             &lt;div class="box"&gt;
@@ -11,4 +11,5 @@ Building a flex container, which calls .row, contains 4 columns that have .box i
             &lt;/div&gt;
         &lt;/div&gt;
 &lt;/div&gt;
-</pre>  
+</pre> 
+.box has position: relative that could be let .overlay according with.
